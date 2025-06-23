@@ -9,9 +9,9 @@ const Header = () => {
     const {user} = useUser();
     
   return (
-    <div className='flex-col items-center justify-between p-5'>
+    <div className='flex items-center justify-between p-5'>
         {user && (
-            <h1>{user?.firstName}{`'s`} Space</h1>
+            <h1 className='text-3xl'>{user?.firstName}{`'s`} Space</h1>
         )}
 
         <div>
